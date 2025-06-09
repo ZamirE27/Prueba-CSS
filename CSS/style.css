@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Merriweather", serif;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+/* header that give the first design */
+.header{
+    background-color: black;
+    overflow: hidden;
+
+}
+/* here we control teh header content */
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 5rem;
+}
+/* here we give style to the titlle */
+.tittle{
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* here we make the second part of teh tittle bold */
+.tittle_bold{
+    font-weight: bold;
+}
+/* here we organized the scond part of the header */
+.nav_bar{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.nav_bar a{
+    text-decoration: none;
+    color: white;
+}
+.nav_bar a:hover{
+    color: grey;
+}
+/* here we give some instructions to the main content */
+.main_content{
+
+    max-width: 100%;
+    padding-top: 2rem;
+    height: 750px;
+}
+/* here qe use grid to control the content position */
+.content_cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 24px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+/* here we control the content of the card one so it get positionated with the column and rows we asign  */
+.card_1{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/7;
+    grid-row: 4/9;
+    padding: 4rem;
+    gap: 2rem;
+}
+h2{
+    font-size: 5rem;
+}
+.card_text p{
+    font-size: 2rem;
+}
+.card_button{
+    margin-top: 3rem;
+}
+.card_button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold ;
+    background-color: black;
+    padding: 1rem 2rem;
+    margin-bottom: 1.2rem;
+    border: none;
+}
+.card_button a:hover{
+    color:grey ;
+}
+.logos{
+    display: flex;
+    padding: 4rem;
+    gap: 5rem;
+    height: 90px;
+    width: 90px;
+}
+/* here we control the logos structure and we even call one animation for them */
+.logos img{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    animation: flotar 3s ease-in-out infinite;
+}
+.card_aside{
+    grid-column: 7/13;
+    grid-row: 4/9;
+}
+.card_aside h2{
+    font-size: 4rem;
+}
+
+.footer{
+    background-color: black;
+    overflow: hidden;
+    margin-top: auto;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 3rem;
+}
+.footer .nav_bar{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav_bar img{
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+/*  here we make the code responsive for tablets */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+
+    .nav_bar{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    }
+    h2{
+    font-size: 3rem;
+    }
+    .card_text p{
+    font-size: 1.5rem;
+    }
+    .card_aside h2{
+    font-size: 2.5rem;
+    }
+    .logos{
+    display: flex;
+    padding: 4rem;
+    gap: 3rem;
+    height: 45px;
+    width: 45px;
+    }
+}
+
+/*  here we make teh code responsive for phone */
+@media (max-width: 481px){
+    body {
+        background-color: lightblue;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+
+    .nav_bar{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .card_text p{
+        font-size: 1.5rem;
+    }
+    .card_aside h2{
+        font-size: 2.5rem;
+    }
+    .logos{
+        display: flex;
+        padding: 1rem;
+        gap: 1rem;
+        height: 45px;
+        width: 45px;
+    }
+    .card_aside{
+        grid-column: 3/7;
+        grid-row: 7/13;
+    }
+    .card_1{
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 3/7;
+        grid-row: 1/7;
+        padding: 1rem;
+        gap: 2rem;
+    }
+}
+
+/* this is the animation we{ve create for the logos */
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }  /* Sube */
+    100% { transform: translateY(0); }     /* Baja */
+}

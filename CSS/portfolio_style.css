@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Merriweather", serif;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: black;
+    overflow: hidden;
+
+}
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 2rem 5rem;
+}
+.tittle{
+    font-weight: 100;
+    font-style: italic;
+}
+.tittle_bold{
+    font-weight: bold;
+}
+.nav_bar{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.nav_bar a{
+    text-decoration: none;
+    color: white;
+}
+.nav_bar a:hover{
+    color: grey;
+}
+.content{
+    max-width: 75rem;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2.5rem;
+}
+.card_1{
+    border-bottom: 3px solid #e1e1e1e1;
+    margin-bottom: 1.2rem;
+    overflow: hidden;
+}
+.card_1:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.card_content{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+h3{
+    font-size: 32px;
+    margin: 32px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: center;
+}
+img{
+    border-style: none;
+    width: 100%;
+}
+h4{
+    font-size: 28px;
+}
+p{
+    line-height: 1.8;
+    margin: 1em;
+    font-size: 1.1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    overflow: hidden;
+    
+}
+.main_cards a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold ;
+    background-color: black;
+    padding: 1rem 2rem;
+    margin-bottom: 1.2rem;
+    border: none;
+}
+.footer{
+    background-color: black;
+    overflow: hidden;
+    margin-top: auto;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem 3rem;
+}
+.footer .nav_bar{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav_bar img{
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    width: 3rem;
+    height: 3rem;
+}
