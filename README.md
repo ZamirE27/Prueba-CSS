@@ -18,4 +18,3 @@ Este proyecto es una práctica básica de maquetación y estilos con HTML y CSS.
 
 Este proyecto es solo una prueba práctica, así que no es un sitio final, solo ejercicios para mejorar el uso de HTML y CSS.
 
-Gracias por visitar el repositorio 
